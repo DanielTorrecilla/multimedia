@@ -1,0 +1,121 @@
+/* style.css */
+
+/* Restablecer algunos estilos por defecto del navegador */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    font-size: 16px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    background: #555;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+.movies-category, .song {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie, .song {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: calc(33.333% - 40px);
+    margin: 20px;
+}
+
+.movie img, .song img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 700px) {
+    .movie, .song {
+        width: calc(50% - 40px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .movie, .song {
+        width: 100%;
+    }
+}
+
+header form {
+    margin-top: 10px;
+    text-align: right;
+}
+
+header form input[type="text"],
+header form input[type="password"] {
+    margin: 0 5px;
+}
+
+header form input[type="submit"] {
+    margin: 0 15px;
+}
+.admin-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h2 {
+    margin-bottom: 15px;
+}
+
+.admin-options a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.admin-options a:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
